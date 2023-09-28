@@ -1,6 +1,6 @@
 # MiniProjects-Using-AWSServices
 
-## 1.Talkify- A Text to Speech Converter using Amazon Polly
+## 1.Talkify- A Text to Speech Converter using Amazon Polly Service
 
 Amazon Polly uses deep learning technologies to synthesize natural-sounding human speech, so you can convert articles to speech. With dozens of lifelike voices across a broad set of languages, use Amazon Polly to build speech-activated applications.
 
@@ -83,4 +83,11 @@ This Python code creates a graphical user interface (GUI) using the tkinter libr
 
 7. Finally, it starts the GUI main loop using root.mainloop(), which keeps the application running and responsive to user interactions.
 
+### On Running the Solution
 
+
+## 2.ScanVault-A Text Extractor Using Amazon Textract Service
+
+Amazon Textract is an advanced machine learning service that automates the extraction of text, handwriting, and data from scanned documents, including tables and forms, eliminating the need for manual data entry or OCR configuration. It revolutionizes document processing by significantly reducing time and effort while maintaining accuracy, with the option to enhance data validation through Amazon Augmented AI.
+
+![amazon-textract](Amazon-Textract.jfif)
