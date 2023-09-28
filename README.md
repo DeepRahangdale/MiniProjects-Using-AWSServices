@@ -59,5 +59,28 @@ btnRead.pack()
 root.mainloop()   
 
 ```
+### Description
+
+This Python code creates a graphical user interface (GUI) using the tkinter library for a Text-to-Speech (T2S) converter that utilizes Amazon Polly's TTS (Text-to-Speech) service. Here's a brief description of what the code does:
+
+1. It imports the necessary libraries, including tkinter for GUI creation, boto3 for AWS interaction, and other standard modules.
+
+2. The GUI window is created with dimensions 400x240 pixels and is titled "T2S-Converter Amazon Polly."
+
+3. Inside the GUI, there's a text input field (Text widget) where users can input the text they want to convert to speech.
+
+4. There's a "Convert" button that, when clicked, triggers the getText function.
+
+5. In the getText function:
+
+* It sets up an AWS session using the 'text-to-speech' profile and creates a Polly client.
+* Retrieves the text entered by the user from the Text widget.
+* Uses Amazon Polly to synthesize speech from the entered text with a specified voice (Joanna), output format (mp3), and speech engine (neural).
+* If successful, it saves the synthesized speech as an MP3 file in the system's temporary directory.
+* If running on Windows, it opens the generated MP3 file using the default system application.
+
+6. The code handles various error scenarios, such as the absence of an "AudioStream" in the Polly response and I/O errors during file writing.
+
+7. Finally, it starts the GUI main loop using root.mainloop(), which keeps the application running and responsive to user interactions.
 
 
