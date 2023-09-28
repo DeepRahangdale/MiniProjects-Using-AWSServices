@@ -73,11 +73,11 @@ This Python code creates a graphical user interface (GUI) using the tkinter libr
 
 5. In the getText function:
 
-* It sets up an AWS session using the 'text-to-speech' profile and creates a Polly client.
-* Retrieves the text entered by the user from the Text widget.
-* Uses Amazon Polly to synthesize speech from the entered text with a specified voice (Joanna), output format (mp3), and speech engine (neural).
-* If successful, it saves the synthesized speech as an MP3 file in the system's temporary directory.
-* If running on Windows, it opens the generated MP3 file using the default system application.
+  * It sets up an AWS session using the 'text-to-speech' profile and creates a Polly client.
+  * Retrieves the text entered by the user from the Text widget.
+  * Uses Amazon Polly to synthesize speech from the entered text with a specified voice (Joanna), output format (mp3), and speech engine (neural).
+  * If successful, it saves the synthesized speech as an MP3 file in the system's temporary directory.
+  * If running on Windows, it opens the generated MP3 file using the default system application.
 
 6. The code handles various error scenarios, such as the absence of an "AudioStream" in the Polly response and I/O errors during file writing.
 
