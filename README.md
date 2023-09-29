@@ -177,4 +177,9 @@ Overall, this code allows users to upload an image, displays it in the GUI, and 
 
 ### On Running the Solution
 
+![textract-output](textractoutput1.png)
+
+![textract-output](textractoutput2.png)
+
+![textract-output](textractoutput3.png)
 
