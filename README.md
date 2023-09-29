@@ -73,11 +73,11 @@ This Python code creates a graphical user interface (GUI) using the tkinter libr
 
 5. In the getText function:
 
-  * It sets up an AWS session using the 'text-to-speech' profile and creates a Polly client.
-  * Retrieves the text entered by the user from the Text widget.
-  * Uses Amazon Polly to synthesize speech from the entered text with a specified voice (Joanna), output format (mp3), and speech engine (neural).
-  * If successful, it saves the synthesized speech as an MP3 file in the system's temporary directory.
-  * If running on Windows, it opens the generated MP3 file using the default system application.
+   * It sets up an AWS session using the 'text-to-speech' profile and creates a Polly client.
+   * Retrieves the text entered by the user from the Text widget.
+   * Uses Amazon Polly to synthesize speech from the entered text with a specified voice (Joanna), output format (mp3), and speech engine (neural).
+   * If successful, it saves the synthesized speech as an MP3 file in the system's temporary directory.
+   * If running on Windows, it opens the generated MP3 file using the default system application.
 
 6. The code handles various error scenarios, such as the absence of an "AudioStream" in the Polly response and I/O errors during file writing.
 
@@ -86,6 +86,12 @@ This Python code creates a graphical user interface (GUI) using the tkinter libr
 Overall, this code provides a simple GUI interface for users to input text and convert it to speech using Amazon Polly's TTS service, with the option to play the generated audio file on Windows systems.
 
 ### On Running the Solution
+
+![polly-output](pollyoutput1.png)
+
+![polly-output](pollyoutput2.png)
+
+![polly-output](pollyoutput3.png)
 
 
 ## 2. ScanVault-A Text Extractor Using Amazon Textract Service
@@ -156,12 +162,12 @@ This Python code creates a graphical user interface (GUI) using the tkinter libr
 
 5. In the upload_file function:
 
-* It sets up an AWS session using the 'text-to-speech' profile and creates a Textract client in the 'us-east-1' region.
-* Opens a file dialog to allow the user to select an image file (restricted to JPG format).
-* Resizes the selected image for display in the GUI and converts it to a PhotoImage object.
-* Displays the resized image in a label within the GUI.
-* Reads the image file as bytes and passes it to Textract for text extraction.
-* Iterates through the extracted text blocks (in this case, words) and prints them to the console.
+   * It sets up an AWS session using the 'text-to-speech' profile and creates a Textract client in the 'us-east-1' region.
+   * Opens a file dialog to allow the user to select an image file (restricted to JPG format).
+   * Resizes the selected image for display in the GUI and converts it to a PhotoImage object.
+   * Displays the resized image in a label within the GUI.
+   * Reads the image file as bytes and passes it to Textract for text extraction.
+   * Iterates through the extracted text blocks (in this case, words) and prints them to the console.
 
 6. The get_image_byte function reads the selected image file and returns its contents as bytes.
 
