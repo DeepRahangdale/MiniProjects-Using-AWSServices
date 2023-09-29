@@ -87,10 +87,12 @@ Overall, this code provides a simple GUI interface for users to input text and c
 
 ### On Running the Solution
 
+To convert text to speech, you can provide any text you'd like.
 ![polly-output](pollyoutput1.png)
 
 ![polly-output](pollyoutput2.png)
 
+Saves the synthesized speech as an MP3 file in the system's temporary directory.
 ![polly-output](pollyoutput3.png)
 
 
@@ -177,9 +179,12 @@ Overall, this code allows users to upload an image, displays it in the GUI, and 
 
 ### On Running the Solution
 
+Here, You can provide any Image(jpg format only) you'd like.
 ![textract-output](textractoutput1.png)
 
+Uses Amazon Textract to extract and print the text Word Wise
 ![textract-output](textractoutput2.png)
 
+Uses Amazon Textract to extract and print the text Line Wise
 ![textract-output](textractoutput3.png)
 
